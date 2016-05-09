@@ -31,8 +31,8 @@ Now the Chef Server has all it needs for the demo.
 
 To configure the connection to a cloud provider, create a file in the format `<provider-id>.properties` in the `src/main/resources` directory. The file must contain two keys:
 
-* <provider-id>.identity = <identity used to connect to the provider>
-* <provider-id>.credential = <credential used to connect to the provider>
+    <provider-id>.identity = <identity used to connect to the provider>
+    <provider-id>.credential = <credential used to connect to the provider>
 
 Values can also be path to files that contain the credential. This makes it easier to provide
 private keys, and avoids exposing the credentials if the file is uploaded to a version control
