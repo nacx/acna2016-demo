@@ -1,0 +1,7 @@
+{
+  "name": "jclouds-demo",
+  "description": "ACNA 2016 Demo for jclouds and Chef",
+  "cookbook_versions": {
+    "haproxy": "= 1.6.6"
+  }
+}

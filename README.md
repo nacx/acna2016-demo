@@ -1,13 +1,13 @@
-ApacheCon NA 2016 demo
-======================
+ApacheCon NA 2016 jclouds demo
+==============================
 
 The ACNA 2016 demo is an application that deploys nodes to a given cloud provider, and uses 
-[Chef](http://chef.io) for configuration management and service discovery. If you don't have a Chef Server, you can try this demo for free with a [Hosted Chef] account.
+[Chef](https://www.chef.io) for configuration management and service discovery. If you don't have a Chef Server, you can try this demo for free with a [Hosted Chef](https://www.chef.io/chef/get-chef/) account.
 
 ## Configuring the Chef Server
 
 First of all, the Chef Server must have the cookbooks and roles that will be used in this example
-application. In order to do that, you need to have the `knife CLI` installed on route machine. If you don't have it, you can download and install Chef from [here](<chef download link>).
+application. In order to do that, you need to have the `knife CLI` installed on route machine. If you don't have it, you can download and install Chef from [here](https://downloads.chef.io/chef-client/).
 
 Once the Chef CLI is installed, you can upload everything to the Chef Server as follows:
 
@@ -15,7 +15,7 @@ Once the Chef CLI is installed, you can upload everything to the Chef Server as 
 gem install Berkshelf    # Cookbook manager used to manage cookbook dependencies
 cd chef
 berks install            # Download the cookbooks and their dependencies
-berks upload -a          # Upload everything to the Chef Server
+berks upload             # Upload everything to the Chef Server
 ```
 
 Once the cookbooks are installed, the roles and environments need to be uploaded:

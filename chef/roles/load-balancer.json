@@ -1,0 +1,23 @@
+{
+  "name": "load-balancer",
+  "description": "Dynamic HAProxy load balancer",
+  "default_attributes": {
+    "chef_client": {
+      "interval": "60",
+      "splay": "5"
+    },
+    "haproxy": {
+      "app_server_role": "webserver",
+      "member_port": 80,
+      "enable_default_http": false,
+      "admin": {
+        "address_bind": "0.0.0.0"
+      }
+    }
+  },
+  "run_list": [
+    "recipe[haproxy::app_lb]",
+    "recipe[haproxy::manual]",
+    "recipe[chef-client]"
+  ]
+}

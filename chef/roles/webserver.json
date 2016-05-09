@@ -1,0 +1,7 @@
+{
+  "name": "webserver",
+  "description": "Apache HTTP Server",
+  "run_list": [
+    "recipe[apache2]"
+  ]
+}
