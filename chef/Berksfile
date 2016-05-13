@@ -4,5 +4,5 @@ cookbook 'apache2', '~> 3.2.2'
 
 # The HAProxy cookbook does not properly read the ip address of the nodes
 # in some clouds. This branch contains a temporal patch that can be used until
-# the bug is fixed. 
+# the bug is fixed. See: https://github.com/hw-cookbooks/haproxy/pull/130 
 cookbook 'haproxy', git: 'https://github.com/nacx/haproxy', branch: 'jclouds'
