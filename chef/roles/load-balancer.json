@@ -3,7 +3,7 @@
   "description": "Dynamic HAProxy load balancer",
   "default_attributes": {
     "chef_client": {
-      "interval": "60",
+      "interval": "30",
       "splay": "5"
     },
     "haproxy": {
