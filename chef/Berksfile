@@ -3,6 +3,6 @@ source 'https://supermarket.chef.io'
 cookbook 'apache2', '~> 3.2.2'
 
 # The HAProxy cookbook does not properly read the ip address of the nodes
-# in some clouds. This branch containst a temporal patch that can be used until
+# in some clouds. This branch contains a temporal patch that can be used until
 # the bug is fixed. 
 cookbook 'haproxy', git: 'https://github.com/nacx/haproxy', branch: 'jclouds'
